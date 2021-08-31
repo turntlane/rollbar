@@ -1,5 +1,10 @@
 const express = require('express')
 const path = require('path')
+const Rollbar = require('rollbar')
+
+let rollbar = new Rollbar({
+    accessToken: ''
+})
 
 const app = express()
 
